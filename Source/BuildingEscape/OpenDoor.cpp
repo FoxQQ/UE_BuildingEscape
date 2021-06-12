@@ -19,6 +19,8 @@ UOpenDoor::UOpenDoor()
 void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
+	
+  	UE_LOG(LogTemp, Display, TEXT("UOpenDoor::BeginPlay") );
 
 	FRotator CurrentRotation = GetOwner()->GetActorRotation();
 	
